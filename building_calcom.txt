@@ -1,0 +1,51 @@
+** Week Sprint (05/20/2022)
+
+- Add busy slots when an event is booked and the time becomes unavailable.
+- Make the "Default" and "Name" fields of the schedule editable.
+- Display only the available (default) schedule.
+- Add the ability to save time zones.
+- Display time zones in the event creation form.
+- Fix the layout for the smallest resolution.
+- Add a default switch component for the schedule and event type components.
+- Bug: For new events, update the local state before sending a request to the server.
+- Edit the form for event types.
+- Bug: Redirect after event cancellation is not working.
+- Extract the "Display Date" method.
+- Create a custom hook for page titles (besides the main menu).
+- Implement a right-side menu for event types.
+
+  ** Week Sprint (05/13/2022)
+  
+- Bug: Reloading the page at availability/results in an error.
+- Add the ability to create and delete schedules.
+- Consider busy time slots when booking an event. When an event is booked, mark the time as unavailable to prevent double bookings.
+- Implement event cancellation with a layout for the cancellation form and success page.
+- Filter out canceled meetings on the booking page.
+- Add tooltips and functionality for event buttons (copy to clipboard and view).
+- Create a form (layout and methods) for new event types.
+- UI Bug: On the Bookings page, the Bookings button behaves as inactive when switching tabs.
+- UI Bug: The "Event Types" button icon doesn’t change color on hover.
+- Create markup for the 404 page.
+
+  ** Week Sprint (05/08/2022)
+
+- Created a grid for the polls module and implemented the "add time frame" function.
+- Bug: The menu is not displayed on several pages.
+- Bug: Routes like localhost/events or localhost/availability act as if attempting to access localhost/username. Exclude these routes.
+- Bug: Redux state clears after page reload, making it impossible to retrieve logged user data and causing a 404 error.
+- Changed the menu display logic.
+- Fetch schedules from the server and add delete functionality for schedules.
+- Completed the Settings page. Providers can now edit any data on this page and save it to the server.
+- Improved the functionality of the "Away Mode." When a provider activates checkout mode, their public page becomes unavailable for booking, and visitors see an "Out of Office" message instead of event types.
+- Fix the layout for the success screen.
+- Week Sprint (05/01/2022)
+- UI Bug: When returning to the calendar from the Event Form screen, the Time Slots panel opens but remains empty.
+- Completed the process of creating new events. Events can now be posted to the server and displayed on the bookings page.
+- Implement user authentication through the server and retrieve a token.
+- Adjust the menu layout for two additional resolutions.
+- Changed the URL format for routes with dates from d_mm_yy to d-mm-yy.
+- Fixed the user's public page and corrected the redirect when clicking the "View Public Page" button.
+- Protected the "success" route.
+- Refactored the login block to display domain/username instead of domain/name and fixed the method that calculates the length of the provider's name.
+- Display event type in the Consumer Calendar module.
+
